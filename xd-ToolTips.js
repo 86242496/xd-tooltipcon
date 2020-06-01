@@ -78,7 +78,7 @@
         closeThis: function () {
             document.on('click', function (e) {
                 if (!$(e.target).closest('.xd-tooltipcon,.xd-tooltips').length) {
-                    console.log($(this), 'this')
+                   
                     $(".xd-tooltips").remove();
                 }
             })
