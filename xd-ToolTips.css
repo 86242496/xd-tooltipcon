@@ -1,0 +1,67 @@
+.xd-tooltips{
+    position: absolute;
+    animation-name:xm-upbit;
+    animation-duration:0.3s;
+  animation-fill-mode:both;
+  box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+}
+.xd-tooltips button{
+  margin-left: 10px;
+}
+.xd-tooltips button:first-child{
+  margin-left: 0;
+}
+.arrow-top {
+  position: absolute;
+  left:50%;
+  top:-15px;
+  margin-left: -15px;
+  width: 0;   
+  height: 0;   
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff; 
+  font-size: 0;  
+  line-height: 0; 
+}
+
+/* 向下的箭头 */
+ 
+.arrow-bottom {
+  position: absolute;
+  left:50%;
+  bottom:-15px;
+  margin-left: -15px;
+  width: 0;   
+  height: 0;   
+  border-left: 10px solid transparent;  /* 左边框的宽 */  
+  border-right: 10px solid transparent; /* 右边框的宽 */  
+  border-top: 10px solid #FFF; /* 下边框的长度|高,以及背景色 */  
+  font-size: 0;  
+  line-height: 0; 
+
+}
+
+@-webkit-keyframes xm-upbit {
+  from {
+    -webkit-transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes xm-upbit {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
