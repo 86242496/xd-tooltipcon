@@ -40,7 +40,7 @@
                 }
                 // 当按钮在页面底部时，向上生成元素
                 if (TOP + 48 >= document.height()) {
-                    console.log(LEFT,'LEFT')
+                   
                     if ($(this).offset().left + 29 >210) {
                         ARROWLEFT = '';
                     } else {
