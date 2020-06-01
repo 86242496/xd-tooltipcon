@@ -1,2 +1,2 @@
 # xd-tooltipcon
-生成弹出层
+基于xd-buttons样式的弹出层
