@@ -32,16 +32,16 @@
                 var ARROWLEFT = '';//箭头位置，在左边时，简单居左，在中间时，箭头居于元素的中间
 
                 // 当距离左边小于按钮一半的宽度时，刚居右显示
-                if (LEFT < 169 - 39) {
+                if (LEFT < 210 - 39) {
                     LEFT = LEFT;
                     ARROWLEFT = 30;
                 } else {
-                    LEFT = LEFT + 35 - 338 / 2
+                    LEFT = LEFT + 35 - 420 / 2
                 }
                 // 当按钮在页面底部时，向上生成元素
                 if (TOP + 48 >= document.height()) {
-            
-                    if (LEFT > 169 - 39) {
+                    console.log(LEFT,'LEFT')
+                    if ($(this).offset().left + 29 >210) {
                         ARROWLEFT = '';
                     } else {
                         ARROWLEFT = 30;
@@ -65,6 +65,7 @@
                 '<button class="xd-buttons xd-button-highlight">多选题</button>' +
                 '<button class="xd-buttons xd-button-highlight">填空题</button>' +
                 '<button class="xd-buttons xd-button-highlight">简答题</button>' +
+                '<button class="xd-buttons xd-button-highlight">判断题</button>' +
                 arrowstr +
                 '</div></div>';
         },
