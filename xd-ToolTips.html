@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <script type="text/javascript" src="layui/layui.all.js"></script>
-    <link rel="stylesheet" href="layui/css/layui.css">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="xd-ToolTips.css">
+        <link rel="stylesheet" href="xd-buttons.css">
 
-    <link rel="stylesheet" href="xd-ToolTips.css">
-    <link rel="stylesheet" href="xd-buttons.css">
+        <title>xd-ToolTips</title>
+    </head>
 
-    <title>xd-ToolTips</title>
-</head>
-
-<body>
-    <div style="height: 500px;"></div>
-    <button class="xd-buttons xd-button-primary xd-tooltipcon">添加</button>
-    <span style="display: inline-block;width: 200px;"></span><button class="xd-buttons xd-button-primary xd-tooltipcon">添加</button>
-    
-</body>
-<script src="jquery.js"></script>
-<script src="xd-ToolTips.js"></script>
-<script type="text/javascript">
+    <body>
+        <div style="height: 500px;"></div>
+        <button class="xd-buttons xd-button-primary xd-tooltipcon">添加</button>
+        <span style="display: inline-block;width: 200px;"></span><button
+            class="xd-buttons xd-button-primary xd-tooltipcon">添加</button>
+    </body>
+    <script src="jquery.js"></script>
+    <script src="xd-ToolTips.js"></script>
+    <script type="text/javascript">
     $('.xd-tooltipcon').xdToolTips({
         callback:function(resp){
             console.log(resp,'resp')
@@ -28,5 +25,4 @@
     })
 
 </script>
-
 </html>
